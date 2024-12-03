@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: unnati
-  name: unnati
+    app: voteapp
+  name: voteapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: unnati
+      app: voteapp
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: unnati
+        app: voteapp
     spec:
       containers:
       - image: docker.io/httpd
